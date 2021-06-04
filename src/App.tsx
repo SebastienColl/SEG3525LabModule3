@@ -182,25 +182,25 @@ const App: React.FC<AppProps> = () => {
   return (
     <BrowserRouter>
       <Navbar bg="dark" variant="dark">
-        <Navbar.Brand href="/home">
+        <Navbar.Brand>
           <FaOpencart/>{' '}
           Épicerie Express
         </Navbar.Brand>
         <BsFillPersonFill color="white" size={24}/>
         <NavDropdown title="Informations personnelles" id="foodPreferences">
-          <NavDropdown.Item><Link className="dropdown-link" to="/personalInfo/foodPreferences" >Préférences alimentaires</Link></NavDropdown.Item>
+          <NavDropdown.Item><Link className="dropdown-link" to="/SEG3525LabModule3/personalInfo/foodPreferences" >Préférences alimentaires</Link></NavDropdown.Item>
           <NavDropdown.Divider />
           <NavDropdown.Item>Information de livraison</NavDropdown.Item>
           <NavDropdown.Item>Information de paiement</NavDropdown.Item>
         </NavDropdown>
         <GiFruitBowl color="white" size={24} />
         <NavDropdown title="Épicerie en ligne" id="onlineStore">
-          <NavDropdown.Item><Link className="dropdown-link" to="/onlineStore/products" >Produits</Link></NavDropdown.Item>
+          <NavDropdown.Item><Link className="dropdown-link" to="/SEG3525LabModule3/onlineStore/products" >Produits</Link></NavDropdown.Item>
           <NavDropdown.Divider />
           <NavDropdown.Item>Livraison à domicile</NavDropdown.Item>
           <NavDropdown.Item>Nous joindre</NavDropdown.Item>
         </NavDropdown>
-        <Nav.Link><BiCartAlt color="white" size={24}/><Link className="cart-link" to="/cart">Panier</Link></Nav.Link>
+        <Nav.Link><BiCartAlt color="white" size={24}/><Link className="cart-link" to="/SEG3525LabModule3/cart">Panier</Link></Nav.Link>
       </Navbar>
       <Switch>
         <Route path="/personalInfo/foodPreferences">
