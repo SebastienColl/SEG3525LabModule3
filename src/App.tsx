@@ -188,7 +188,7 @@ const App: React.FC<AppProps> = () => {
         </Navbar.Brand>
         <BsFillPersonFill color="white" size={24}/>
         <NavDropdown title="Informations personnelles" id="foodPreferences">
-          <NavDropdown.Item><Link className="dropdown-link" to="/SEG3525LabModule3/personalInfo/foodPreferences" >Préférences alimentaires</Link></NavDropdown.Item>
+          <NavDropdown.Item><Link className="dropdown-link" to="/SEG3525LabModule3/personalInfo/foodPreference" >Préférences alimentaires</Link></NavDropdown.Item>
           <NavDropdown.Divider />
           <NavDropdown.Item>Information de livraison</NavDropdown.Item>
           <NavDropdown.Item>Information de paiement</NavDropdown.Item>
@@ -203,7 +203,7 @@ const App: React.FC<AppProps> = () => {
         <Nav.Link><BiCartAlt color="white" size={24}/><Link className="cart-link" to="/SEG3525LabModule3/cart">Panier</Link></Nav.Link>
       </Navbar>
       <Switch>
-        <Route path="/SEG3525LabModule3/personalInfo/foodPreferences">
+        <Route path="/SEG3525LabModule3/personalInfo/foodPreference">
           <ClientInformationComponent organicPreference={organicPreference} filters={filters} setFilters={setFilters} setOrganicPreference={setOrganicPreference} />
         </Route>
         <Route path="/SEG3525LabModule3/onlineStore/products">
