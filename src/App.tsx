@@ -203,13 +203,13 @@ const App: React.FC<AppProps> = () => {
         <Nav.Link><BiCartAlt color="white" size={24}/><Link className="cart-link" to="/SEG3525LabModule3/cart">Panier</Link></Nav.Link>
       </Navbar>
       <Switch>
-        <Route path="/personalInfo/foodPreferences">
+        <Route path="/SEG3525LabModule3/personalInfo/foodPreferences">
           <ClientInformationComponent organicPreference={organicPreference} filters={filters} setFilters={setFilters} setOrganicPreference={setOrganicPreference} />
         </Route>
-        <Route path="/onlineStore/products">
+        <Route path="/SEG3525LabModule3/onlineStore/products">
           <ProductsComponent organicPreference={organicPreference} products={products} cart={cart} filters={filters}/>
         </Route>
-        <Route path="/cart">
+        <Route path="/SEG3525LabModule3/cart">
           <Cart cart={cart} />
         </Route>
       </Switch>
